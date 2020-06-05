@@ -14,7 +14,7 @@ class Test_Send_Message():
         self.driver = init_driver(self.appPackage, self.appActivity)
         self.msg_obj = message(self.driver)
 
-    @pytest.mark.parametrize('phone_num', ['13510313389'])
+    @pytest.mark.parametrize('phone_num', ['13910313389'])
     def test_input_phone_num(self, phone_num):
         self.msg_obj.create_new_conversation()
         self.msg_obj.input_recipient_phone(phone_num)
